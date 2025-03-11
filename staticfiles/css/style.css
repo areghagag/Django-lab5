@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+nav {
+    background: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.trainee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.trainee-table th, .trainee-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.trainee-table th {
+    background-color: #007bff;
+    color: white;
+}
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background: #28a745;
+    border-radius: 5px;
+}
+.btn-delete {
+    background: #dc3545;
+}
+.btn-add {
+    display: inline-block;
+    margin-top: 10px;
+    background: #007bff;
+}

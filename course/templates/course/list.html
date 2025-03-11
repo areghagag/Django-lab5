@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Course List</h2>
+<table class="trainee-table">
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+    {% for course in courses %}
+    <tr>
+        <td>{{ course.title }}</td>
+        <td>{{ course.description }}</td>
+
+        <td>
+            <a href="{% url 'update_course' course.id %}" class="btn btn-edit  ">Edit</a>
+            <a href="{% url 'delete_course' course.id %}" onclick="return confirm('Are you sure?')" class="btn btn-delete">Delete</a>
+
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{% url 'add_course' %}" class="btn btn-add">Add Course</a>
+{% endblock %}
