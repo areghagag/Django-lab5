@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "1f327de7-0ab2-4219-9816-feefa1af90dc",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33331147"
+	},
+	"item": [
+		{
+			"name": "http://api.alquran.cloud/v1/edition?language=ar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.alquran.cloud/v1/edition?language=ar",
+					"protocol": "http",
+					"host": [
+						"api",
+						"alquran",
+						"cloud"
+					],
+					"path": [
+						"v1",
+						"edition"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/trainees/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "fayrouz hagag",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "fayrouz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "course_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/trainees/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"trainees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/courses/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "React",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "React Course",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/courses/6/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courses",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
